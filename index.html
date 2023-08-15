@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com Abas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/fotos-premium/fundo-azul-bonito-que-tons-da-luz-ao-escuro-conceito-ceu-ar-e-mar_71793-40.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #37474f;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            margin-right: 10px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #455a64;
+            padding: 10px 0;
+        }
+
+        .tab {
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        .partner-logo img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        function showContent(contentId) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.style.display = 'none';
+            });
+            document.getElementById(contentId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://images-ext-1.discordapp.net/external/gsqDT05koB1joFe8aJxKezG7bI78nxIJPUNMR2zYFvA/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/1070875458712895508/f1f9222c7777e0247c1084a61e2dd483.png?width=417&height=417" alt="George-Bot Logo">
+        </div>
+        <div class="logo-text">George-Bot</div>
+    </div>
+    <div class="tabs">
+        <div class="tab" onclick="showContent('parceiros')">Parceiros</div>
+        <div class="tab" onclick="showContent('privacidade')">Política de Privacidade</div>
+        <div class="tab" onclick="showContent('termos')">Termos de Uso</div>
+    </div>
+
+    <div class="content" id="parceiros" style="display:none;">
+        <h2>Parceiros</h2>
+        <div class="partner-logo">
+            <img src="https://media.discordapp.net/attachments/1128328421529899109/1138123675766370406/PE_LOGO-1024.png?width=400&height=400" alt="Python Everything Logo">
+        </div>
+        <p>Python Everything muito obrigado pelo apoio &lt;3</p>
+    </div>
+
+    <div class="content" id="privacidade" style="display:none;">
+        <h2>Política de Privacidade</h2>
+        <p>
+            - O bot George-bot não tem permissão para adicionar você em servidores sem a sua autorização.<br>
+            - O George-bot coleta dados como ID de usuário e nome de usuário, incluindo nomes de servidores e seus respectivos donos.<br>
+            - O George-bot NUNCA solicitará informações como nitro, senha, ou qualquer dado sensível através de mensagens diretas.<br>
+            - O George-Bot (em conformidade com o artigo 218-C do Código Penal Brasileiro) não coleta ou armazena nenhum tipo de imagem.<br>
+            - O George-Bot não divulga nenhum tipo de dados de usuários a terceiros.<br>
+            Estamos constantemente aprimorando a nossa política de privacidade para garantir a segurança e proteção dos usuários.
+        </p>
+    </div>
+
+    <div class="content" id="termos" style="display:none;">
+        <h2>Termos de Uso</h2>
+        <ol>
+            <li>
+                <strong>[01°]</strong> - É proibido abusar de bugs no bot. Caso encontre algum bug em algum comando, reporte imediatamente para a equipe do George para evitar punições.
+            </li>
+            <li>
+                <strong>[02°]</strong> - Proibido utilizar mais de uma conta para obter vantagens ou contornar o sistema do bot.
+            </li>
+            <li>
+                <strong>[03°]</strong> - Está proibido plagiar/copiar comandos do bot. Use sua criatividade e habilidades para criar novos comandos.
+            </li>
+            <li>
+                <strong>[04°]</strong> - Ao realizar transações econômicas com o bot, verifique se confia na pessoa com quem está negociando. A equipe não se responsabiliza por problemas resultantes de transações mal-sucedidas.
+            </li>
+            <li>
+                <strong>[05°]</strong> - Não troque as moedas do George por qualquer tipo de produto (exemplo: 1000 dólares = Nitro/imagem pornográfica).
+            </li>
+            <li>
+                <strong>[06°] - Não adicione o George-bot em servidores maliciosos, como servidores de invasão.
+
+</li>
+<li>
+              <strong>[07°] - Se receber perdão da equipe do bot, você será avisado por mensagem direta. Caso receba mais de dois avisos, poderá ser banido do bot/servidor. Sempre procure respeitar as regras do bot para evitar punições.
+
+</li>
+<li>
+            <strong>[08°] - É proibido divulgar informações falsas ou enganosas utilizando o George-bot. Seja honesto com as informações fornecidas pelo bot.
+
+</li>
+<li>
+            <strong>[09°] - Não zombe, insulte ou assedie outros usuários através do bot. Mantenha um ambiente respeitoso e amigável.
+
